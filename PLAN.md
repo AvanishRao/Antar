@@ -14,8 +14,8 @@ Working scope: a Vercel-hosted interactive website, built for a solo founder. Sh
 ## Verified release — 16 October 2026
 
 - Production URL: https://antar-wisdom.vercel.app
-- Vercel deployment: `dpl_6fzckWqR2LRwVUYREPAQFfkFy7bg` (ready and aliased to the production URL).
-- Website source tested: Git commit `675e268e244f9324692950daeec038132a2a0dc0`; this release record is a documentation-only follow-up.
+- Vercel reported the production deployment ready and aliased to the URL above.
+- Website source tested: Git commit `675e268e244f9324692950daeec038132a2a0dc0`; subsequent release-record commits only change this Markdown file.
 - `npm test`: eight passing tests. `npm run build`: passed.
 - Live checks: complete 12-question check-in; required answer and preserved back-navigation answer; Ramayana filter; skip link focus; save and reload; export containing the test note and source; approved deletion of the disposable test note; 390px and 320px layouts without horizontal overflow.
 - Production HTML and JavaScript returned HTTP 200. The live JavaScript contains the final scripture-filter and skip-link fixes.
