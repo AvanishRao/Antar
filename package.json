@@ -1,0 +1,15 @@
+{
+  "name": "antar-wisdom",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A source-linked Hindu wisdom reflection prototype",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "export-data": "node scripts/export-corpus.mjs"
+  },
+  "engines": { "node": "24.x" }
+}

@@ -1,0 +1,27 @@
+const paths = {
+ lotus:'<path d="M12 19C4 19 3 12 3 9c5 0 9 4 9 10Zm0 0c8 0 9-7 9-10-5 0-9 4-9 10Z"/><path d="M12 19C7 14 8 7 12 3c4 4 5 11 0 16Z"/><path d="M5 22h14"/>',
+ home:'<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/>',
+ compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5Z"/>',
+ book:'<path d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z"/>',
+ bookmark:'<path d="M5 3h14v19l-7-5-7 5Z"/>',
+ arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',
+ chevron:'<path d="m9 5 7 7-7 7"/>',
+ back:'<path d="M20 12H4m6-6-6 6 6 6"/>',
+ spark:'<path d="m12 2 2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7Z"/>',
+ flame:'<path d="M13 2c1 6-7 7-7 13a6 6 0 0 0 12 0c0-3-1-5-3-7 0 4-3 4-3 4 2-4 2-7 1-10Z"/>',
+ bowl:'<path d="M3 10h18c0 7-3 10-9 10S3 17 3 10ZM8 22h8M8 3v3m4-5v5m4-3v3"/>',
+ knot:'<path d="M9 15 6 18a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m2 2 3-3a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0M8 16l8-8"/>',
+ mountain:'<path d="m2 21 8-17 5 10 3-5 5 12ZM7 10l3 2 3-2"/>',
+ leaves:'<path d="M12 21V9M12 15C2 16 3 7 3 7c8-1 9 8 9 8Zm0-4c-1-9 8-9 8-9 1 8-8 9-8 9Z"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/>',
+ check:'<path d="m5 12 4 4L20 5"/>',
+ lock:'<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',
+ external:'<path d="M14 3h7v7m0-7L10 14M10 3H3v18h18v-7"/>',
+ search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/>',
+ close:'<path d="m6 6 12 12M6 18 18 6"/>',
+ info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>',
+ download:'<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>',
+ trash:'<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/>'
+};
+export function icon(name, className='') { return `<svg class="icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.spark}</svg>`; }
